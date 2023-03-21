@@ -1,0 +1,78 @@
+/* Navbar container */
+.navbar {
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  height: 80px; /* Set navbar height */
+  background-color: lightblue; /* Set navbar background color */
+  padding: 0 40px; /* Add padding to left and right sides */
+  position: relative;
+}
+
+/* Logo image */
+.navbar__logo img {
+  height: 60px; /* Set logo height */
+}
+
+/* Navbar menu */
+.navbar__menu {
+  display: flex; /* Use flexbox to align items */
+  list-style: none; /* Remove bullets from list */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Navbar menu items */
+.navbar__item {
+  margin-right: 20px; /* Add space between menu items */
+}
+
+/* Navbar menu item links */
+.navbar__item a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Set link text color */
+  font-weight: bold; /* Set link text weight */
+}
+
+/* Hamburger icon */
+.navbar__icon {
+  display: none; /* Hide the icon by default */
+  font-size: 24px; /* Set icon size */
+  color: white; /* Set icon color */
+  cursor: pointer; /* Change cursor on hover */
+  margin-left: auto; /* Add this line to move the icon to the right */
+  position: absolute; /* Add this line to position the icon */
+  top: 10px; /* Add this line to position the icon */
+  right: 10px; /* Add this line to position the icon */
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Navbar container */
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to left */
+    height: auto; /* Set height to auto */
+    padding: 20px; /* Add padding to all sides */
+  }
+
+  /* Navbar menu */
+  .navbar__menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack items vertically */
+    margin-top: 20px; /* Add space at top */
+  }
+
+  /* Navbar menu when active */
+  .navbar__menu.active {
+    display: flex; /* Show menu */
+    margin-left: auto; /* Add this line to move the icon to the right */
+
+  }
+
+  /* Hamburger icon when active */
+  .navbar__icon {
+    display: block; /* Show icon */
+  }
+}

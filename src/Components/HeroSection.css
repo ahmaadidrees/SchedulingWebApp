@@ -1,0 +1,54 @@
+/* Set the height of the hero section */
+.hero-section {
+    height: 100vh;
+  }
+  
+  /* Center the slideshow container vertically and horizontally */
+  .slideshow-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Set the size of the images and center them */
+  .slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Show only the active slide */
+  .slide:not(.active) {
+    display: none;
+  }
+  
+  /* Set the styles for the book now button */
+  .book-now {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Set the styles for the book now button on hover */
+  .book-now:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
