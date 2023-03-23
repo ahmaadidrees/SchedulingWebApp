@@ -3,7 +3,7 @@ import './HeroSection.css';
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ['/Images/haircutSampleOne.jpeg', '/Images/haircutSampleTwo.jpeg', '/Images/haircutSampleThree.jpeg'];
+  const images = ['/Images/image1.JPG', '/Images/image2.JPG', '/Images/image3.JPG'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,7 +13,7 @@ const HeroSection = () => {
   }, [currentImageIndex, images.length]);
 
   return (
-    <div className="hero-section">
+    <div id="home" className="hero-section">
       <div className="slideshow-container">
         {images.map((image, index) => (
           <div key={index} className={`slide ${index === currentImageIndex ? 'active' : ''}`}>

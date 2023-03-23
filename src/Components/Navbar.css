@@ -6,7 +6,10 @@
   height: 80px; /* Set navbar height */
   background-color: lightblue; /* Set navbar background color */
   padding: 0 40px; /* Add padding to left and right sides */
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  z-index: 9999;
 }
 
 /* Logo image */
